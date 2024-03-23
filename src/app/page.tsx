@@ -1,4 +1,4 @@
-import Image from "next/image";
+'use client';
 
 export default function Home() {
   return (
@@ -15,7 +15,10 @@ export default function Home() {
 
         <div className="flex justify-center max-w-[700px] mt-8">
           <ul className="grid grid-cols-1 grid-flow-row gap-4 md:grid-cols-2">
-            <li className="border-2 border-[#333] rounded-md p-2 max-w-[340px] cursor-pointer hover:border-colorHover hover:text-hoverColor hover:shadow-2xl">
+            <li 
+              className="border-2 border-[#333] rounded-md p-2 max-w-[340px] cursor-pointer hover:border-colorHover hover:text-hoverColor hover:shadow-2xl"
+              onClick={() => window.open('https://wa.link/xcqmnz')}
+            >
               <h1 className="font-bold">Orçamentos</h1>
 
               <p className="font-medium text-justify mt-2 text-sm">
@@ -31,7 +34,10 @@ export default function Home() {
               </p>
             </li>
 
-            <li className="border-2 border-colorDefault rounded-md p-2 max-w-[340px] cursor-pointer hover:border-colorHover hover:text-hoverColor hover:shadow-2xl">
+            <li 
+              className="border-2 border-colorDefault rounded-md p-2 max-w-[340px] cursor-pointer hover:border-colorHover hover:text-hoverColor hover:shadow-2xl"
+              onClick={() => window.open('https://github.com/leandro-wrocha', '_blank')}
+            >
               <span>Github</span>
 
               <p className="font-medium text-justify mt-2 text-sm">
