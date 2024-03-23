@@ -6,19 +6,14 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'color1': '#1D1F26',
-      'color2': '#111320',
-      'color3': '#171924',
-      'color4': '#343642',
-      'color5': '#494C5C',
-      'color6': '#EEEEEE',
-      'color7': '#C3C3C3',
-      'color8': '#FFFFFF',
+      "defaultColor": "#333",
+      "hoverColor": "#006ee7"
     },
     extend: {
-      dropShadow: {
-        '8xl': '0px 0px 8px #FFFFFF40'
-      },
+      borderColor: {
+        "colorHover": "#006ee7",
+        "colorDefault": "#333"
+      }
     }
   },
   plugins: [],

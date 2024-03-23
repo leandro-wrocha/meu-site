@@ -3,35 +3,47 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="h-full p-4">
-      <header className="flex justify-end">
-        <button>
-          ENG
-        </button>
-      </header>
-
       <main className="flex flex-col items-center">
-        <div className="h-[340px] w-[340px] rounded-full bg-color3 flex justify-center items-center drop-shadow-8xl">
-          <Image className="h-[310px] w-[310px] rounded-full object-cover" src="/profile.png" width={310} height={310} alt="avatar-profile"/>
+        <img src="/profile.png" alt="Leandro Rocha" className="rounded-full w-[210px] h-[210px] mt-4"/>
+        
+        <div className="mt-4 flex flex-col items-center">
+          <h1 className="text-3xl font-bold">Leandro Rocha</h1>
+          <h3 className="text-sm italic">Desenvolvedor Web/Backend</h3>
+          <br/>
+          <span className="font-light text-lg">Bora resolver problema de código?</span>
         </div>
 
-        <div className="mt-7 text-center">
-          <h2 className="text-5xl text-color6 font-semibold">Leandro Rocha</h2>
-          <h5 className="text-xl text-color7 italic">Desenvolvedor Web/Backend</h5>
-        </div>
+        <div className="flex justify-center max-w-[700px] mt-8">
+          <ul className="grid grid-cols-1 grid-flow-row gap-4 md:grid-cols-2">
+            <li className="border-2 border-[#333] rounded-md p-2 max-w-[340px] cursor-pointer hover:border-colorHover hover:text-hoverColor hover:shadow-2xl">
+              <h1 className="font-bold">Orçamentos</h1>
 
-        <div id="tabs-about" className="mt-[118px] flex gap-16">
-          <div className="w-[310px] h-[115px] bg-color5 border-2 border-color2 drop-shadow-8xl rounded">
-            Solicite orçamentos
-          </div>
+              <p className="font-medium text-justify mt-2 text-sm">
+                Para suporte ou implementação de novas funcionalidades, contenho conhecimento em PHP e Typescript. Entre em contato comigo.
+              </p>
+            </li>
 
-          <div className="w-[310px] h-[115px] bg-color5 border-2 border-color2 drop-shadow-8xl rounded">
-            Minha Agenda
-          </div>
+            <li className="border-2 border-colorDefault rounded-md p-2 max-w-[340px] cursor-pointer hover:border-colorHover hover:text-hoverColor hover:shadow-2xl">
+              <span className="font-bold">MinhaAgenda</span>
+
+              <p className="font-medium text-justify mt-2 text-sm">
+                Este é um projeto pessoal no qual estou trabalhando duro para torná-lo uma realidade. Clique aqui para dar uma olhada no progresso atual e fique atento para futuras atualizações!
+              </p>
+            </li>
+
+            <li className="border-2 border-colorDefault rounded-md p-2 max-w-[340px] cursor-pointer hover:border-colorHover hover:text-hoverColor hover:shadow-2xl">
+              <span>Github</span>
+
+              <p className="font-medium text-justify mt-2 text-sm">
+                Este é meu portifólio como desenvolvedor, e aqui podemos acompanhar minha evolução como desenvolvedor backend.
+              </p>
+            </li>
+          </ul>
         </div>
       </main>
-
+      
       <footer className="flex justify-center mt-[118px] p-4">
-        <span className="text-sm text-color7 text-center align-middle">&#169; Leandro Rocha</span>
+        <span className="text-sm text-center align-middle">&#169; Leandro Rocha</span>
       </footer>
     </div>
   );
